@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>College Notice Board</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="icon">📌</span>
+    <div>
+      <h1>College Notice Board</h1>
+      <p>Announcement System</p>
+    </div>
+  </div>
+  <nav>
+    <a href="admin.html">Admin Login</a>
+  </nav>
+</header>
+
+<main>
+  <div class="toolbar">
+    <input type="text" id="searchInput" placeholder="Search notices..." />
+    <select id="categoryFilter">
+      <option value="All">All Categories</option>
+      <option value="General">General</option>
+      <option value="Academic">Academic</option>
+      <option value="Exam">Exam</option>
+      <option value="Event">Event</option>
+      <option value="Placement">Placement</option>
+      <option value="Holiday">Holiday</option>
+    </select>
+    <select id="priorityFilter">
+      <option value="All">All</option>
+      <option value="urgent">Urgent Only</option>
+      <option value="normal">Normal Only</option>
+    </select>
+    <button class="btn" id="refreshBtn">Refresh</button>
+  </div>
+
+  <div id="noticeList" class="notice-list">
+    <p class="empty-state">Loading notices...</p>
+  </div>
+</main>
+
+<footer>College Notice Board Announcement System &mdash; Minor Project</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
